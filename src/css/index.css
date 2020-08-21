@@ -14,7 +14,7 @@ div.header {
 }
 
 div.logo {
-    font-family: "Century Gothic", "メイリオ", Arial Black;
+    font-family: "Century Gothic", Arial Black, sans-serif;
     font-size: 250%;
     color: white;
     position: absolute;
