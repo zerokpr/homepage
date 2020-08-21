@@ -11,7 +11,7 @@ class Logo extends React.Component {
     render() {
         return (
             <div class="logo">
-                <a>Corbeau's display</a>
+                Corbeau's display
             </div>
         );
     }

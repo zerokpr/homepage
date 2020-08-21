@@ -6,7 +6,7 @@ export class TopPage extends React.Component {
         return (
             <div class="toppage">
                 <h1>グワーッこのページはPCで見てくれ</h1>
-                <h2>last update: 2020/08/19</h2>
+                <h2>last update: 2020/08/21</h2>
             </div>
         );
     }

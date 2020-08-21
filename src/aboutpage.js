@@ -6,8 +6,10 @@ export class AboutPage extends React.Component {
     render(){
         return (
             <div class="aboutpage">
-                <h1 class="abouttitle">About Me</h1>
-                <img src={my_icon} class="my-icon"/>
+                <div class="my-profile-wrapper">
+                    <h1 class="abouttitle">About Me</h1>
+                    <img src={my_icon} class="my-icon"/>
+                </div>
                 <div class="self-introduction">
                     こんにちは。私はこるぼーといいます。<br />
                     何とか大学非情報系学部情報系専攻3年です。<br />

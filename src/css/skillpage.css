@@ -1,5 +1,6 @@
 .skillpage {
-    position: relative;
+    position: absolute;
+    padding-top: 130px;
     margin-left: 5%;
     margin-right: 5%;
     max-width: 1300px;
@@ -15,7 +16,7 @@
 .langbox {
     position: relative;
     display: inline-block;
-    background-color: rgb(252, 255, 72);
+    background-color: #ffc60a;
     border-radius: 30px;
     height: 250px;
     max-width: 370px;

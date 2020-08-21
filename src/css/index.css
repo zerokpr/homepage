@@ -6,6 +6,7 @@ body {
 div.header {
     z-index: 100;
     height: 130px;
+    max-height: 20%;
     margin-bottom: 130px;
     width: 100%;
     position: fixed;
@@ -16,13 +17,15 @@ div.logo {
     font-family: "Century Gothic", "メイリオ", Arial Black;
     font-size: 250%;
     color: white;
-    padding: 30px;
-    padding-top: 17px;
     position: absolute;
+    margin-left: 3%;
     top: 33%;
+    height: 40%;
     transform: translateY(-33%);
+    overflow-y: hidden;
+    overflow-x: hidden;
     width: 100%;
-    max-width: 500px;
+    max-width: 350px;
 }
 
 div.menubar {
@@ -61,5 +64,5 @@ div.menubar > button.NotSelectedButton{
 div.content {
     background-color: transparent;
     color: white;
-    padding-top: 130px;
+    height: 100%;
 }
