@@ -5,6 +5,7 @@ import {AboutPage} from './aboutpage.js';
 import {LinkPage} from './linkpage.js';
 import {SkillPage} from './skillpage.js';
 import {ContactPage} from './contactpage.js';
+//import 'destyle.css';
 import './css/index.css';
 
 class Logo extends React.Component {
