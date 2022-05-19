@@ -1,0 +1,53 @@
+
+.linkpage {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #555555;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+.link_head {
+    position: absolute;
+    top: 42%;
+    transform: translateY(-42%);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 200%;
+    font-family: "メイリオ", sans-serif;
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: hidden;
+    color: white;
+}
+
+.icons {
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+    max-width: 500px;
+    height: 130px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.icons > li {
+    display: inline;
+    width: 120px;
+    height: 120px;
+}
+
+.iconlink {
+    margin: 20px;  
+}

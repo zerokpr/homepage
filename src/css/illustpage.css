@@ -1,0 +1,51 @@
+
+.illustpage {
+    padding-top: 100px;
+    flex-wrap: wrap;
+    background-color: #555555;
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.illust-head {
+    margin: 30px;
+    margin-top: 5%;
+    margin-left: 9%;
+    font-family: "メイリオ", sans-serif;
+    font-size: 20px;
+    position: relative;
+    color: white;
+}
+
+.illusts {
+    position: relative;
+    width: 100%;
+    /*background-color: black;*/
+    list-style-type: none;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10%;
+}
+
+.illusts > li {
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 30%;
+    /* border: solid #444444 1px; */
+}
+
+.illust {
+    width:100%;
+    height:100%;
+}
