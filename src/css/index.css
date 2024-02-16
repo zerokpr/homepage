@@ -24,8 +24,7 @@ div.logo {
     transform: translateY(-33%);
     overflow-y: hidden;
     overflow-x: hidden;
-    width: 100%;
-    max-width: 350px;
+   
 }
 
 div.menubar {

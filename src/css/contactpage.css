@@ -1,4 +1,4 @@
-.contactpage > h1 {
+.contactpage {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

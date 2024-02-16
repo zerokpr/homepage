@@ -5,6 +5,7 @@ import c_icon from './img/c_icon.png'
 import py_icon from './img/py_icon.png';
 import html_icon from './img/html_icon.png';
 import js_icon from './img/js_icon.png';
+import php_icon from './img/php_icon.png';
 
 class LangBox extends React.Component {
     renderComment() {
@@ -93,6 +94,16 @@ class JSLangBox extends React.Component {
     }
 }
 
+class PHPLangBox extends React.Component {
+    render() {
+        return <LangBox
+        langname={"PHP"}
+        icon={php_icon}
+        comment={"今の会社だとPHPを使っている製品が多いので、古のフレームワークやレガシーコードをしばきながら格闘しています。\n言語仕様の詳細を網羅とはいかないですが、それなりに使えるようになっています。"}
+    />
+    }
+}
+
 export class SkillPage extends React.Component {
     render() {
         return (
@@ -106,6 +117,7 @@ export class SkillPage extends React.Component {
                 <PyLangBox />
                 <HtmlCssLangBox />
                 <JSLangBox />
+                <PHPLangBox />
             </div>
         );
     }

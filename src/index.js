@@ -12,7 +12,7 @@ class Logo extends React.Component {
     render() {
         return (
             <div class="logo">
-                Corbeau's display
+                こるぼーほーむぺーじ
             </div>
         );
     }
