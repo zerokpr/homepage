@@ -5,9 +5,7 @@ import {AboutPage} from './aboutpage/aboutpage.js';
 import {LinkPage} from './linkpage/linkpage.js';
 import {LangsPage} from './langspage/langspage.js';
 import {ContactPage} from './contactpage/contactpage.js';
-import {IllustPage} from './illustpage/illustpage.js';
 import './index.css';
-import logo from './img/logo.png';
 
 /**
  * ページを追加・ページ名を更新する際はここのpageListを更新すること
@@ -17,7 +15,7 @@ class MyPage extends React.Component {
         super(props);
         this.state = {
             pageTitle : "Top",
-            pageList : ["Top", "About", "Link", "Languages", "Illust", "Contact"],
+            pageList : ["Top", "About", "Link", "Languages", "Contact"],
         };
     }
 
@@ -120,12 +118,10 @@ class Contents extends React.Component {
                 return (<LinkPage />);
             case "Languages":
                 return (<LangsPage />);
-            case "Illust":
-                return (<IllustPage />);
             case "Contact":
                 return (<ContactPage />);
             default:
-                throw new Error("変な操作しないで！");
+                throw new Error("変な操作しないで！><");
         }
     }
     render(){

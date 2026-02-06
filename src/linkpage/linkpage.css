@@ -12,20 +12,40 @@
     justify-content: center;
 }
 
-.link_head {
+.link-head {
     text-align: center;
-    font-size: 200%;
+    font-size: 1.5rem;
     width: 100%;
     display: inline-block;
-    white-space: nowrap;
+    word-wrap: break-word;
     color: white;
+}
+@media (min-width: 768px) {
+    .link-head {
+        font-size: 2rem;
+    }
 }
 
 .icons {
     padding: 0;
     list-style-type: none;
-    justify-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+@media (min-width: 768px) {
+    .icons {
+        justify-content: center;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+}
+
+.iconlink img {
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
 }
 
 .icons > li {

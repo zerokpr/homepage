@@ -5,20 +5,29 @@
     align-items: center;
     background-color: #555555;
     font-size: 18px;
-    height: 100%;
+    width: 100%;
 }
 
 .aboutpage-wrapper {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .aboutpage-wrapper {
+        flex-direction: row;
+    }
 }
 
 .aboutpage-title-wrapper {
-    margin-right: 5%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
 }
 
 .abouttitle {
     text-align: center;
-    font-size: 35px;
+    font-size: 2rem;
     color: white;
 }
 
@@ -33,11 +42,9 @@
 .self-introduction {
     background-color: #ffc60a;
     color: #222222;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "メイリオ";
     padding: 20px;
-    width: 600px;
-    max-width: 100%;
     margin: 2%;
     border-radius: 20px;
     word-wrap: normal;

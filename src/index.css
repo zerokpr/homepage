@@ -3,6 +3,7 @@ html {
     height: 100%;
     width: 100%;
     font-family: 'gkkt';
+    font-size: 16px;
 }
 
 body {
@@ -45,7 +46,7 @@ div.contents {
 
 div.page-logo {
     font-family: 'gkkt';
-    font-size: 52px;
+    font-size: 2rem;
     color: white;
     position: absolute;
     margin-left: 24px;
@@ -53,13 +54,13 @@ div.page-logo {
     transform: translateY(-33%);
 }
 
-.page-logo-img {
-    height: 48px;
-    object-fit: contain;
+@media (min-width: 768px) { /* tablet */
+    div.page-logo { 
+        font-size: 3rem;
+    }
 }
 
 div.menubar {
-    padding-left: 18px;
     background-color: transparent;
     position: absolute;
     top: 100%;
@@ -67,16 +68,29 @@ div.menubar {
     height: 33%;
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
+}
+@media (min-width: 768px) { /* tablet */
+    div.menubar { 
+        padding-left: 18px;
+        font-size: 2rem;
+    }
 }
 
+
 div.menubar > button {
-    font: 200% "gkkt";
+    font-family: "gkkt";
+    font-size: 1rem;
     background-color: transparent;
     color: white;
     border-color: transparent;
     background: transparent;
     border-bottom: 1;
+}
+
+@media (min-width: 768px) { /* tablet */
+    div.menubar > button { 
+        font-size: 2rem;
+    }
 }
 
 div.menubar > button:focus {

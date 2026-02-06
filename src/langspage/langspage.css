@@ -1,45 +1,58 @@
 .skillpage {
-    display: flex;
-    justify-content: center;
+    width: 100%;
 }
 
 .skillpage-wrapper {
-    max-width: 1300px;
+    display: block;
+    justify-items: center;
+    width: 100%;
+    padding-bottom: 2rem;
 }
 
 .skillpage-comment {
     margin: 30px;
-    margin-left: 9%;
+    position: relative;
     font-family: "メイリオ", sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     color: white;
 }
 
+@media (min-width: 768px) {
+    .skillpage-comment {
+        font-size: 1.5rem;
+    }
+}
+
+.langbox-wrapper {
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+@media (min-width: 768px) {
+    .langbox-wrapper {
+        width: max-content;
+        gap: 3rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
 .langbox {
-    position: relative;
-    display: inline-block;
     background-color: #ffc60a;
     border-radius: 30px;
-    height: 250px;
-    max-width: 370px;
-    min-width: 350px;
-    width: 30%;
+    height: 270px;
+    width: 350px;
     padding-top: 10px;
-    padding-left: 2%;
+    padding-left: 5%;
     padding-right: 2%;
     padding-bottom: 2%;
-    margin-top: 10px;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-bottom:10px;
     color: black;
-    object-fit: cover;
 }
 
 .lang-icon {
-    position: absolute;
-    width: 21%;
-    height: 30%;
+    width: 64px;
+    height: 64px;
     padding: 5px;
     object-fit: contain;
     background-color: white;
@@ -47,11 +60,14 @@
     border-radius: 10px;
 }
 
+.langbox-header {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
 
 .lang-name { 
-    position: absolute;
-    padding-left: 30%;
-    padding-top: 8%;
+    padding-left: 1.5rem;
     width: 21%;
     height: 4%;
     font-size: 32px;
@@ -59,10 +75,10 @@
 }
 
 .langbox-comment {
-    position: absolute;
+    padding-top: 1rem;
     margin-left: 0px;
     margin-right: 5%;
-    margin-top: 30%;
     font-size-adjust: initial;
     font-family: "メイリオ"; 
 }
+

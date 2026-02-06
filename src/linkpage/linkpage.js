@@ -50,7 +50,7 @@ export class LinkPage extends React.Component {
         return (
             <div class="linkpage">
                 <div class="linkpage-wrapper">
-                    <div class="link_head">You can find me on these websites.</div>
+                    <div class="link-head">You can find me on these websites.</div>
                     <ul class="icons">
                         <li><IconLinkToGithub /></li>
                         <li><IconLinkToTwitter /></li>
