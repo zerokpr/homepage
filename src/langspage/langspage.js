@@ -3,6 +3,8 @@ import './langspage.css';
 import cpp_icon from './img/cpp_icon.png';
 import c_icon from './img/c_icon.png'
 import py_icon from './img/py_icon.png';
+import rust_icon from './img/rust_icon.png';
+import haskell_icon from './img/haskell_icon.png';
 import html_icon from './img/html_icon.png';
 import js_icon from './img/js_icon.png';
 import php_icon from './img/php_icon.png';
@@ -19,6 +21,8 @@ export class LangsPage extends React.Component {
                     <CLangBox />
                     <CppLangBox />
                     <PyLangBox />
+                    <RustLangBox />
+                    <HaskellLangBox />
                     <HtmlCssLangBox />
                     <JSLangBox />
                     <PHPLangBox />
@@ -74,7 +78,8 @@ class CppLangBox extends React.Component {
             <LangBox
                 langname={"C++"}
                 icon={cpp_icon}
-                comment={"主に競技プログラミングに使っています。\nゲームの実装にもDxLibを利用しつつ使っています。"}
+                comment={`主に競技プログラミングに使っています。
+                    他にもゲーム（オセロ）の実装やら、大学のプロジェクト演習でGUIや音声処理機能のために使ったりもしました。最近はRustで書けばいいかとなってしまい、趣味ではあまり使わなくなりました。`}
             />
         );
     }
@@ -88,6 +93,33 @@ class PyLangBox extends React.Component {
                 icon={py_icon}
                 comment={`競技プログラミング、Discord botの作成、スクレイピングとデータ分析、その他色々使います。
                     後はオライリーの「ゼロから作るDeep Learning」でニューラルネットを組むために使ったり。`}
+            />
+        );
+    }
+}
+
+class RustLangBox extends React.Component {
+    render() {
+        return (
+            <LangBox
+                langname={"Rust"}
+                icon={rust_icon}
+                comment={`自作のWebサービスを作るのに使ったりしています。最近はOS自作にも使っています。hikalium本最高。
+                    今一番お気に入りの言語です。`}
+            />
+        );
+    }
+}
+
+class HaskellLangBox extends React.Component {
+    render() {
+        return (
+            <LangBox
+                langname={"Haskell"}
+                icon={haskell_icon}
+                comment={`先日「すごいHaskell楽しく学ぼう！」という本を読み終えたばかりです。
+                    モナドの概念がとても面白く、折角なので何か作ってみたい気持ちになっています。
+                    性能が若干気になるところですが……`}
             />
         );
     }
@@ -112,9 +144,8 @@ class JSLangBox extends React.Component {
             <LangBox
                 langname={"JavaScript"}
                 icon={js_icon}
-                comment={`仕事でNode.jsをバックエンドにしたweb開発をしていたことがあります。
-                    後はもっぱらフロントエンド、特にReactで使います。とはいえ最近はTypeScriptを使う方が多いです。
-                    なお、このページもReactで書いています。`}
+                comment={`仕事でNode.jsをバックエンドにしたweb開発をしていました。
+                    他はもっぱらフロントエンド、特にReactで使います。とはいえ最近はTypeScriptを使う方が多いです。なお、このページもReactで書いています。`}
             />
         )
     }
