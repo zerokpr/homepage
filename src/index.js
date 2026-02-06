@@ -7,6 +7,7 @@ import {LangsPage} from './langspage/langspage.js';
 import {ContactPage} from './contactpage/contactpage.js';
 import {IllustPage} from './illustpage/illustpage.js';
 import './index.css';
+import logo from './img/logo.png';
 
 /**
  * ページを追加・ページ名を更新する際はここのpageListを更新すること
@@ -61,8 +62,8 @@ class Header extends React.Component {
 class Logo extends React.Component {
     render() {
         return (
-            <div class="logo">
-                こるぼーほーむぺーじ
+            <div class="page-logo">
+                <img class="page-logo-img" src={logo}/>
             </div>
         );
     }

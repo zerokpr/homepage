@@ -36,15 +36,16 @@ div.contents {
     height: 85%;
 }
 
-div.logo {
-    font-family: "Century Gothic", Arial Black, sans-serif;
-    font-size: 250%;
-    color: white;
+div.page-logo {
     position: absolute;
     margin-left: 3%;
-    top: 33%;
-    height: 40%;
+    top: 40%;
     transform: translateY(-33%);
+}
+
+.page-logo-img {
+    height: 48px;
+    object-fit: contain;
 }
 
 div.menubar {

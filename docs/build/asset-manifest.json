@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/homepage/static/css/main.10266121.css",
-    "main.js": "/homepage/static/js/main.eef8e8d5.js",
+    "main.css": "/homepage/static/css/main.70daa39c.css",
+    "main.js": "/homepage/static/js/main.61a15d1a.js",
     "static/media/makkurobeau.png": "/homepage/static/media/makkurobeau.99e79c8262c94d2e1ab4.png",
     "static/media/cpp_icon.png": "/homepage/static/media/cpp_icon.954f6732266485dfa611.png",
     "static/media/space_hiyoko.jpg": "/homepage/static/media/space_hiyoko.930ee5081a3a1d3db537.jpg",
@@ -12,11 +12,11 @@
     "static/media/atcoder_icon.png": "/homepage/static/media/atcoder_icon.b5a4d2480fd084d3cede.png",
     "static/media/php_icon.png": "/homepage/static/media/php_icon.0a564540c19c7189202e.png",
     "index.html": "/homepage/index.html",
-    "main.10266121.css.map": "/homepage/static/css/main.10266121.css.map",
-    "main.eef8e8d5.js.map": "/homepage/static/js/main.eef8e8d5.js.map"
+    "main.70daa39c.css.map": "/homepage/static/css/main.70daa39c.css.map",
+    "main.61a15d1a.js.map": "/homepage/static/js/main.61a15d1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.10266121.css",
-    "static/js/main.eef8e8d5.js"
+    "static/css/main.70daa39c.css",
+    "static/js/main.61a15d1a.js"
   ]
 }
