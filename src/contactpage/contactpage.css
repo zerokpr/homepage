@@ -1,0 +1,12 @@
+.contactpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "メイリオ", sans-serif;
+    height: 100%;
+}
+
+.contactpage .text-wrapper {
+    color: white;
+    text-align: center;
+}

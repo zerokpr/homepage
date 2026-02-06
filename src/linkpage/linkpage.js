@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/linkpage.css';
+import './linkpage.css';
 import github_icon from './img/github_icon.png';
 import twitter_icon from './img/twitter_icon.png';
 import atcoder_icon from './img/atcoder_icon.png';
@@ -49,12 +49,15 @@ export class LinkPage extends React.Component {
     render() {
         return (
             <div class="linkpage">
-                <div class="link_head">You can find me on these websites.</div>
-                <ul class="icons">
-                    <li><IconLinkToGithub /></li>
-                    <li><IconLinkToTwitter /></li>
-                    <li><IconLinkToHatenaBlog /></li>
-                </ul>
+                <div class="linkpage-wrapper">
+                    <div class="link_head">You can find me on these websites.</div>
+                    <ul class="icons">
+                        <li><IconLinkToGithub /></li>
+                        <li><IconLinkToTwitter /></li>
+                        <li><IconLinkToHatenaBlog /></li>
+                        <li><IconLinkToAtCoder /></li>
+                    </ul>
+                </div>
             </div>
         );
     }

@@ -1,19 +1,13 @@
 
 .illustpage {
-    padding-top: 100px;
     flex-wrap: wrap;
     background-color: #555555;
-    /*position: absolute;*/
-    width: 100%;
-    height: 100%;
     overflow-x: hidden;
-    position: fixed;
+
 }
 
 .illust-head {
     margin: 30px;
-    margin-top: 5%;
-    margin-left: 9%;
     font-family: "メイリオ", sans-serif;
     font-size: 20px;
     position: relative;

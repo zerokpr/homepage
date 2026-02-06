@@ -1,18 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {TopPage} from './toppage.js';
-import {AboutPage} from './aboutpage.js';
-import {LinkPage} from './linkpage.js';
-import {SkillPage} from './skillpage.js';
-import {ContactPage} from './contactpage.js';
-import {IllustPage} from './illustpage.js';
-import './css/index.css';
+import {TopPage} from './toppage/toppage.js';
+import {AboutPage} from './aboutpage/aboutpage.js';
+import {LinkPage} from './linkpage/linkpage.js';
+import {LangsPage} from './langspage/langspage.js';
+import {ContactPage} from './contactpage/contactpage.js';
+import {IllustPage} from './illustpage/illustpage.js';
+import './index.css';
 
-class Logo extends React.Component {
-    render() {
+/**
+ * ページを追加・ページ名を更新する際はここのpageListを更新すること
+ */
+class MyPage extends React.Component {  
+    constructor(props){
+        super(props);
+        this.state = {
+            pageTitle : "Top",
+            pageList : ["Top", "About", "Link", "Languages", "Illust", "Contact"],
+        };
+    }
+
+    handleClick(page){
+        if (page === this.state.pageTitle) {
+            return ;
+        }
+        this.setState({
+            pageTitle : page,
+        });
+    }
+    
+    render(){
         return (
-            <div class="logo">
-                こるぼーほーむぺーじ
+            <div class = "pages">
+                <Header
+                    onClick={(page) => this.handleClick(page)}
+                    nowPage={this.state.pageTitle}
+                    pageList={this.state.pageList}
+                />
+                <Contents page={this.state.pageTitle}/>
             </div>
         );
     }
@@ -28,6 +53,16 @@ class Header extends React.Component {
                     nowPage={this.props.nowPage}
                     pageList={this.props.pageList}
                 />
+            </div>
+        );
+    }
+}
+
+class Logo extends React.Component {
+    render() {
+        return (
+            <div class="logo">
+                こるぼーほーむぺーじ
             </div>
         );
     }
@@ -69,6 +104,9 @@ class MenuBar extends React.Component {
     }
 }
 
+/**
+ * ここで表示するページのルーティング設定してる
+ */
 class Contents extends React.Component {
     renderContent(){
         switch(this.props.page){
@@ -78,54 +116,26 @@ class Contents extends React.Component {
                 return (<AboutPage />);
             case "Link":
                 return (<LinkPage />);
-            case "Skill":
-                return (<SkillPage />);
+            case "Languages":
+                return (<LangsPage />);
             case "Illust":
                 return (<IllustPage />);
             case "Contact":
                 return (<ContactPage />);
+            default:
+                throw new Error("変な操作しないで！");
         }
     }
     render(){
         return (
-            <div class="content">
+            <div class="contents">
                 {this.renderContent()}
             </div>
         );
     }
 }
 
-class MyPage extends React.Component {  
-    constructor(props){
-        super(props);
-        this.state = {
-            pageTitle : "Top",
-            pageList : ["Top", "About", "Link", "Skill", "Illust", "Contact"],
-        };
-    }
 
-    handleClick(page){
-        if (page === this.state.pageTitle) {
-            return ;
-        }
-        this.setState({
-            pageTitle : page,
-        });
-    }
-    
-    render(){
-        return (
-            <div class = "page">
-                <Header
-                    onClick={(page) => this.handleClick(page)}
-                    nowPage={this.state.pageTitle}
-                    pageList={this.state.pageList}
-                />
-                <Contents page={this.state.pageTitle}/>
-            </div>
-        );
-    }
-}
 
 ReactDOM.render(
     <MyPage />,

@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/illustpage.css';
+import './illustpage.css';
 import makkurobeau from './img/makkurobeau.png';
 import hie_hiyoko from './img/hie_hiyoko.jpg';
 
