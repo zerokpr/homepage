@@ -51,11 +51,10 @@
 .lang-name { 
     position: absolute;
     padding-left: 30%;
-    padding-top: 5%;
+    padding-top: 8%;
     width: 21%;
-    height: 30%;
-    font-size: 45px;
-    font-family: "Century Gothic", Helvetica, sans-serif;
+    height: 4%;
+    font-size: 32px;
     object-fit: contain;
 }
 

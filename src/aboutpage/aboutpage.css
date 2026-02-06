@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     background-color: #555555;
-    font-family: sans-serif;
     font-size: 18px;
     height: 100%;
 }
@@ -18,9 +17,8 @@
 }
 
 .abouttitle {
-    padding-right: 20%;
     text-align: center;
-    font: 35px "Century Gothic", Futura, sans-serif;
+    font-size: 35px;
     color: white;
 }
 

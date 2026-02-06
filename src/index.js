@@ -63,7 +63,8 @@ class Logo extends React.Component {
     render() {
         return (
             <div class="page-logo">
-                <img class="page-logo-img" src={logo}/>
+                こるぼーのホームページ
+                {/* <img class="page-logo-img" src={logo}/> */}
             </div>
         );
     }

@@ -2,6 +2,7 @@
 html {
     height: 100%;
     width: 100%;
+    font-family: 'gkkt';
 }
 
 body {
@@ -14,6 +15,12 @@ body {
 div#root {
     height: 100%;
     width: 100%;
+}
+
+@font-face {
+  font-family: 'gkkt';
+  src:
+	url('fonts/851GKKTT.TTF') format('truetype');
 }
 
 .pages {
@@ -37,8 +44,11 @@ div.contents {
 }
 
 div.page-logo {
+    font-family: 'gkkt';
+    font-size: 52px;
+    color: white;
     position: absolute;
-    margin-left: 3%;
+    margin-left: 24px;
     top: 40%;
     transform: translateY(-33%);
 }
@@ -61,7 +71,7 @@ div.menubar {
 }
 
 div.menubar > button {
-    font: 200% "Century Gothic", Futura, sans-serif;
+    font: 200% "gkkt";
     background-color: transparent;
     color: white;
     border-color: transparent;

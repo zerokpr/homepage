@@ -1,5 +1,5 @@
 div.toppage {
-    font-family: "Century Gothic", sans-serif;
+    font-family: "gkkt";
     justify-content: center;
     align-items: center;
     max-width: 100%;
@@ -11,12 +11,13 @@ div.toppage h1 {
     margin: 0;
     color: white;
     text-align: center;
+    font-size: 48px;
 }
 
 div.toppage h2 {
     color:white;
     text-align: center;
-    font-family: "Century Gothic", sans-serif;
+    font-size: 32px;
 }
 
 div.toppage h2.SmartPhoneMessage {
