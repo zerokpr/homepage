@@ -22,10 +22,10 @@ export class AboutPage extends React.Component {
                         <br />
                         ○職歴<br/>
                         1社目:映像配信とかやってるちっこいweb企業<br />
-                        2社目:Nから始まるクソデカSIer<br />
-                        3社目:アルゴリズム高速化とかする方のF社（予定）<br />
+                        2社目:クソデカSIer<br />
+                        3社目:F社<br />
                         <br />
-                        ○資格<br />
+                        ○IT資格<br />
                         ・基本情報技術者<br />
                         ・応用情報技術者<br />
                         ・SnowPro Core Certification<br />
