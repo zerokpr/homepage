@@ -9,7 +9,7 @@ export class AboutPage extends React.Component {
                 <div class="aboutpage-wrapper">
                     <div class="aboutpage-title-wrapper">
                         <h1 class="abouttitle">About Me</h1>
-                        <img src={my_icon} class="my-icon"/>
+                        <img src={my_icon} alt='' class="my-icon"/>
                     </div>
                     <div class="self-introduction">
                        こんにちは。ぼくはこるぼーといいます。<br />

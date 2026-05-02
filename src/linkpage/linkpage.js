@@ -8,7 +8,7 @@ import hatenablog_icon from './img/hatenablog_icon.png';
 class IconLink extends React.Component {
     render() {
         return (
-            <a href={this.props.url} class="iconlink"><img src={this.props.icon} /></a>
+            <a href={this.props.url} class="iconlink"><img src={this.props.icon} alt='' /></a>
         );
     }
 }
